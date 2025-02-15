@@ -49,7 +49,7 @@ body {
 .puzzle-piece {
     width: 100%;
     height: 100%;
-    background-color: #ccc;
+    object-fit: cover; /* Ensures images fill the puzzle grid */
     cursor: pointer;
     transition: opacity 0.3s ease;
 }
