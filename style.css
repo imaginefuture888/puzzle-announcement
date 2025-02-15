@@ -1,3 +1,4 @@
+/* General Body Styles */
 body {
     margin: 0;
     padding: 0;
@@ -9,34 +10,44 @@ body {
     overflow: hidden;
 }
 
+/* Main Container */
 .container {
     position: relative;
-    width: 1080px;
-    height: 1920px;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Background Image - Fixed for All Devices */
 .background {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
 }
 
+/* Puzzle Container */
 .puzzle-container {
     position: relative;
-    width: 900px;
-    height: 900px;
+    width: min(90vw, 900px);
+    height: min(90vw, 900px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Baby Announcement Image */
 .announcement {
     width: 100%;
     height: 100%;
     position: absolute;
 }
 
+/* Puzzle Overlay */
 .puzzle-overlay {
     position: absolute;
     width: 100%;
@@ -46,14 +57,15 @@ body {
     grid-template-rows: repeat(3, 1fr);
 }
 
+/* Puzzle Pieces */
 .puzzle-piece {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures images fill the puzzle grid */
     cursor: pointer;
     transition: opacity 0.3s ease;
 }
 
+/* When Puzzle Piece is Clicked */
 .hidden {
     opacity: 0;
 }
