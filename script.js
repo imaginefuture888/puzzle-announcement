@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     for (let i = 1; i <= 9; i++) {
         let piece = document.createElement("img");
-        piece.src = `Images/piece${i}.png`;
+        piece.src = `Images/piece${i}.png`;  // Correct path
         piece.classList.add("puzzle-piece");
         piece.dataset.index = i;
 
